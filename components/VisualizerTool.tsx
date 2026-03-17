@@ -459,8 +459,7 @@ export const VisualizerTool = ({ onConnectApiKey }: { onConnectApiKey?: () => vo
 
             {/* Main Preview Area */}
             <div className="lg:col-span-9 lg:h-full flex flex-col gap-6">
-               {/* Updated: Added min-h-[400px] to ensure visibility on mobile where flex-grow might collapse */}
-               <div className="relative flex-grow bg-stone-100 rounded-xl overflow-hidden shadow-inner group min-h-[400px] lg:min-h-0">
+               <div className="relative flex-grow bg-stone-100 rounded-xl overflow-hidden shadow-inner group aspect-[4/5] lg:aspect-auto lg:min-h-0">
                  {appState === AppState.GENERATING && (
                    <div className="absolute inset-0 z-30 bg-white/80 backdrop-blur-md flex flex-col items-center justify-center text-stone-900">
                      <div className="w-16 h-16 border-4 border-stone-200 border-t-stone-900 rounded-full animate-spin mb-6" />
