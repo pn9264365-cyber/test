@@ -1,0 +1,7 @@
+{
+  "name": "testing",
+  "description": "Premium room visualizer for flooring and wall tiles. Upload a photo and instantly preview different materials using high-fidelity AI generation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
